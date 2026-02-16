@@ -1,14 +1,12 @@
-# Course Platform (Monorepo)
+Монорепозиторий для курса
 
-Monorepository for the course: separate services + infrastructure + documentation.
+## Структура
+- `services/` - микросервисы (каждый сервис представляет собой изолированный модуль)
+- `infra/` - инфраструктура (`шлюз`, `мониторинг`)
+- `compose/` - файлы композиции для окружений (dev/prod)
+- `docs/` - документация и заметки по проекту
 
-## Structure
-- `services/` - microservices (each service is an isolated module)
-- `infra/` - infrastructure (`gateway`, `monitoring`)
-- `compose/` - compose files for environments (dev/prod)
-- `docs/` - documentation and project notes
-
-## Base Rules
-- All changes go through Pull Requests.
-- Every service must expose `/health` and `/version`.
-- Configuration is provided through environment variables.
+## Базовые правила
+- Все изменения проходят через Pull Requests.
+- Каждый сервис должен отображать `/health` и `/version`.
+- Конфигурация предоставляется через переменные окружения.
