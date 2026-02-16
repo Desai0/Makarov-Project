@@ -12,6 +12,11 @@ __pycache__/
 venv/
 env/
 
+# tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
 # logs
 *.log
 
@@ -19,3 +24,7 @@ env/
 .DS_Store
 .idea/
 .vscode/
+
+# local research artifacts
+docs/pdf_pages/
+docs/reference_materials_extracted.txt
